@@ -8,7 +8,7 @@ $(document).ready(function(e) {
 		 "top":'0', "left": '0'}).hide().eq(0).show();
 	var slideNum = 0;
 	var slideTime;
-	slideCount = $(".slider-content .slide").size();
+	slideCount = $(".slider-content .slide").length;
 	var animSlide = function(arrow){
 		clearTimeout(slideTime);
 		$('.slide').eq(slideNum).fadeOut(SlideSpeed);
